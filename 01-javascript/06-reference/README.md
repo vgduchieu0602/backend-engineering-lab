@@ -331,20 +331,7 @@ a → Object #1
 b → Object #2
 ```
 
-## 12. Không cần Stack/Heap để hiểu Reference
-
-Ở giai đoạn này không cần kết luận:
-
-```text id="yktnn5"
-primitive → stack
-object → heap
-```
-
-Reference có thể được hiểu bằng mental model value/reference trước.
-
-Memory, Stack và Heap sẽ được học riêng sau.
-
-## 13. Minimum Knowledge Checklist
+## 12. Minimum Knowledge Checklist
 
 Sau chủ đề này cần nắm:
 
