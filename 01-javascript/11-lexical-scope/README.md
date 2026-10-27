@@ -2,7 +2,7 @@
 
 ## 1. Problem
 
-Từ Scope, ta biết JavaScript có thể tìm variable từ current scope ra outer scope.
+Từ Scope; ta biết JavaScript có thể tìm variable từ current scope ra outer scope.
 
 Nhưng xuất hiện câu hỏi:
 
@@ -156,7 +156,7 @@ Global
       └── printName
 ```
 
-`run` gọi `printName`, nhưng `printName` không được định nghĩa trong `run`.
+`run` gọi `printName`; nhưng `printName` không được định nghĩa trong `run`.
 
 ---
 

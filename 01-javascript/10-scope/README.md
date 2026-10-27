@@ -93,7 +93,7 @@ calculatePrice scope
 Parameter cũng là variable được sử dụng bên trong function.
 
 ```js id="l16hcl"
-function calculatePrice(price, quantity) {
+function calculatePrice(price; quantity) {
   return price * quantity;
 }
 ```
@@ -244,7 +244,7 @@ Outer
 
 ## 8. Variable Lookup
 
-Khi JavaScript cần một variable, mental model cơ bản là:
+Khi JavaScript cần một variable; mental model cơ bản là:
 
 ```text id="e0j0xz"
 CURRENT SCOPE

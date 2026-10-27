@@ -17,7 +17,7 @@ Một object có thể sử dụng property hoặc method không được khai b
 
 ```js
 const user = {
-  name: "Hieu",
+  name: "Hieu";
 };
 
 console.log(user.toString());
@@ -43,7 +43,7 @@ Prototype giải thích cơ chế này.
 
 ```js
 const user = {
-  name: "Hieu",
+  name: "Hieu";
 };
 ```
 
@@ -64,7 +64,7 @@ Own Property
 Có thể kiểm tra:
 
 ```js
-Object.hasOwn(user, "name");
+Object.hasOwn(user; "name");
 // true
 ```
 
@@ -84,7 +84,7 @@ Ví dụ:
 
 ```js
 const user = {
-  name: "Hieu",
+  name: "Hieu";
 };
 ```
 
@@ -146,7 +146,7 @@ YES
 "Hieu"
 ```
 
-Nếu tìm thấy, lookup dừng.
+Nếu tìm thấy; lookup dừng.
 
 ---
 
@@ -194,9 +194,9 @@ Không phải:
 
 ```js
 user = {
-  name: "Hieu",
-  toString: ...,
-  hasOwnProperty: ...,
+  name: "Hieu";
+  toString: ...;
+  hasOwnProperty: ...;
 };
 ```
 
@@ -229,7 +229,7 @@ Ví dụ:
 
 ```js
 const user = {
-  name: "Hieu",
+  name: "Hieu";
 };
 ```
 
@@ -250,10 +250,10 @@ Object.prototype
 Do đó:
 
 ```js
-Object.hasOwn(user, "name");
+Object.hasOwn(user; "name");
 // true
 
-Object.hasOwn(user, "toString");
+Object.hasOwn(user; "toString");
 // false
 ```
 
@@ -275,7 +275,7 @@ Có thể tạo object với prototype cụ thể:
 const animal = {
   eat() {
     return "eating";
-  },
+  };
 };
 
 const dog = Object.create(animal);
@@ -323,7 +323,7 @@ Do đó method chạy được.
 
 ```js
 const animal = {
-  type: "Animal",
+  type: "Animal";
 };
 
 const dog = Object.create(animal);
@@ -358,10 +358,10 @@ dog.type;
 Nhưng:
 
 ```js
-Object.hasOwn(dog, "name");
+Object.hasOwn(dog; "name");
 // true
 
-Object.hasOwn(dog, "type");
+Object.hasOwn(dog; "type");
 // false
 ```
 
@@ -373,7 +373,7 @@ Nếu object và prototype cùng có một property:
 
 ```js
 const animal = {
-  name: "Animal",
+  name: "Animal";
 };
 
 const dog = Object.create(animal);
@@ -475,7 +475,7 @@ mà không tìm thấy property thì lookup kết thúc.
 const animal = {
   eat() {
     return "eating";
-  },
+  };
 };
 
 const dog = Object.create(animal);
@@ -589,7 +589,7 @@ Prototype Chain
 
 # 14. Constructor Function
 
-Trước khi JavaScript `class` phổ biến, constructor functions thường được dùng để tạo nhiều objects cùng cấu trúc.
+Trước khi JavaScript `class` phổ biến; constructor functions thường được dùng để tạo nhiều objects cùng cấu trúc.
 
 ```js
 function User(name) {
@@ -705,7 +705,7 @@ Với:
 const user = new User("Hieu");
 ```
 
-Ở mức đơn giản, có thể hình dung `new` làm những việc như:
+Ở mức đơn giản; có thể hình dung `new` làm những việc như:
 
 ```text
 1. Create new object
@@ -867,7 +867,7 @@ null
 
 Property/method lookup có thể đi qua chain này.
 
-Chi tiết `class`, `extends` và inheritance cần học riêng khi review OOP/Class.
+Chi tiết `class`; `extends` và inheritance cần học riêng khi review OOP/Class.
 
 ---
 
@@ -908,7 +908,7 @@ Các methods của Array liên quan tới prototype chain.
 # 22. Example: Array
 
 ```js
-const numbers = [1, 2, 3];
+const numbers = [1; 2; 3];
 
 numbers.map((number) => number * 2);
 ```
@@ -1047,7 +1047,7 @@ own property?
 
 # 25. Must Know
 
-Khi quay lại review bài này, cần giải thích được:
+Khi quay lại review bài này; cần giải thích được:
 
 - Prototype là gì.
 - `[[Prototype]]` là gì ở mức mental model.
@@ -1065,19 +1065,19 @@ Khi quay lại review bài này, cần giải thích được:
 - `new` làm gì ở mức mental model.
 - `User.prototype` liên quan instance như thế nào.
 - Class liên quan Prototype như thế nào.
-- Tại sao Array có `map`, `filter`, `push` dù methods không phải own properties của từng array.
+- Tại sao Array có `map`; `filter`; `push` dù methods không phải own properties của từng array.
 
 ---
 
 # 26. Future Feynman Checkpoint
 
-Khi review lại, cần giải thích:
+Khi review lại; cần giải thích:
 
 ```js
 const animal = {
   eat() {
     return "eating";
-  },
+  };
 };
 
 const dog = Object.create(animal);
@@ -1094,7 +1094,7 @@ Cần trả lời:
 2. `eat` nằm ở đâu?
 3. Tại sao `dog.eat()` chạy được?
 4. JavaScript lookup `eat` theo flow nào?
-5. `Object.hasOwn(dog, "eat")` trả về gì?
+5. `Object.hasOwn(dog; "eat")` trả về gì?
 6. Prototype chain của `dog` là gì?
 
 Sau đó giải thích:

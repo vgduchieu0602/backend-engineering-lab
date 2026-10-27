@@ -6,7 +6,7 @@ Cho:
 
 ```js id="c2r92a"
 const originalUser = {
-  name: "Hieu",
+  name: "Hieu";
   role: "user"
 };
 
@@ -88,18 +88,18 @@ Mutation không yêu cầu phải có nhiều variables hoặc shared references
 
 Immutable approach:
 
-> Khi cần state mới, giữ object cũ không thay đổi và tạo object mới biểu diễn state mới.
+> Khi cần state mới; giữ object cũ không thay đổi và tạo object mới biểu diễn state mới.
 
 Ví dụ:
 
 ```js id="es1h0v"
 const product = {
-  name: "Keyboard",
+  name: "Keyboard";
   price: 100
 };
 
 const updatedProduct = {
-  ...product,
+  ...product;
   price: 120
 };
 ```
@@ -112,7 +112,7 @@ product
    ▼
 Object #1
 {
-  name: "Keyboard",
+  name: "Keyboard";
   price: 100
 }
 
@@ -122,7 +122,7 @@ updatedProduct
    ▼
 Object #2
 {
-  name: "Keyboard",
+  name: "Keyboard";
   price: 120
 }
 ```
@@ -184,7 +184,7 @@ Có thể tạo object mới bằng:
 
 ```js id="p93pqm"
 const updatedUser = {
-  ...originalUser,
+  ...originalUser;
   role: "admin"
 };
 ```
@@ -215,7 +215,7 @@ Cho:
 
 ```js id="ky4k3l"
 const originalUser = {
-  name: "Hieu",
+  name: "Hieu";
   address: {
     city: "Hanoi"
   }
@@ -304,10 +304,10 @@ mà vẫn giữ original state:
 
 ```js id="as7j26"
 const updatedUser = {
-  ...originalUser,
+  ...originalUser;
 
   address: {
-    ...originalUser.address,
+    ...originalUser.address;
     city: "Danang"
   }
 };
@@ -364,7 +364,7 @@ Cho:
 const originalUser = {
   profile: {
     city: "Hanoi"
-  },
+  };
 
   settings: {
     theme: "dark"
@@ -382,10 +382,10 @@ có thể:
 
 ```js id="mcp7ht"
 const updatedUser = {
-  ...originalUser,
+  ...originalUser;
 
   profile: {
-    ...originalUser.profile,
+    ...originalUser.profile;
     city: "Danang"
   }
 };
@@ -522,7 +522,7 @@ Sau chủ đề này cần nắm:
 * Shallow copy chỉ tạo outer object mới.
 * Nested objects có thể vẫn shared reference.
 * Mutation nested shared object có thể làm original state thay đổi.
-* Khi immutable update nested data, cần tạo object mới trên path cần thay đổi.
+* Khi immutable update nested data; cần tạo object mới trên path cần thay đổi.
 * Những object không thay đổi có thể tiếp tục được shared.
 * `const` không đồng nghĩa với immutable.
 * Reference không phải mutation.

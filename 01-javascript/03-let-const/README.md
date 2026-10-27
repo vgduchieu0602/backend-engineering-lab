@@ -1,6 +1,6 @@
 # Variable declaration
 
-Trong JS, let và const được dùng để khai báo variable
+Trong JS; let và const được dùng để khai báo variable
 
 ## Let
 

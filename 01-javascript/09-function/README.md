@@ -2,7 +2,7 @@
 
 ## 1. Problem
 
-Trong chương trình, chúng ta thường có logic cần thực hiện nhiều lần.
+Trong chương trình; chúng ta thường có logic cần thực hiện nhiều lần.
 
 Ví dụ:
 
@@ -150,11 +150,11 @@ parameter nhận argument
 ## 7. Multiple Parameters
 
 ```js id="1acqxk"
-function calculatePrice(price, quantity) {
+function calculatePrice(price; quantity) {
   console.log(price * quantity);
 }
 
-calculatePrice(100, 3);
+calculatePrice(100; 3);
 ```
 
 Mapping:
@@ -178,11 +178,11 @@ Logic:
 Function có thể đưa một value ra cho code gọi nó sử dụng.
 
 ```js id="d3i45n"
-function calculatePrice(price, quantity) {
+function calculatePrice(price; quantity) {
   return price * quantity;
 }
 
-const total = calculatePrice(100, 3);
+const total = calculatePrice(100; 3);
 ```
 
 Mental model:
@@ -227,11 +227,11 @@ return 300;
 Ví dụ:
 
 ```js id="y55dkf"
-function calculatePrice(price, quantity) {
+function calculatePrice(price; quantity) {
   console.log(price * quantity);
 }
 
-const total = calculatePrice(100, 3);
+const total = calculatePrice(100; 3);
 ```
 
 Console in:
@@ -252,7 +252,7 @@ vì function không return kết quả.
 
 ## 10. Function không có return
 
-Nếu function kết thúc mà không có `return` value, returned value là:
+Nếu function kết thúc mà không có `return` value; returned value là:
 
 ```js id="wn9i9g"
 undefined
@@ -279,7 +279,7 @@ result === undefined;
 ## 11. Return kết thúc Function
 
 ```js id="0zd6fe"
-function calculate(a, b) {
+function calculate(a; b) {
   return a + b;
 
   console.log("Done");
@@ -319,13 +319,13 @@ EXIT FUNCTION
 ## 12. Complete Data Flow
 
 ```js id="cfve62"
-function calculateOrder(price, quantity) {
+function calculateOrder(price; quantity) {
   const total = price * quantity;
 
   return total;
 }
 
-const orderTotal = calculateOrder(150, 2);
+const orderTotal = calculateOrder(150; 2);
 ```
 
 Flow:

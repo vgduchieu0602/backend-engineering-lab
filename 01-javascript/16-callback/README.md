@@ -20,7 +20,7 @@
 
 ## 1. Problem
 
-Trong JavaScript, đôi khi một function cần:
+Trong JavaScript; đôi khi một function cần:
 
 - nhận một logic khác từ bên ngoài
 - quyết định khi nào logic đó được chạy
@@ -37,7 +37,7 @@ function processPlant(plant) {
 
 Logic `console.log(plant.name)` đang bị hard-code.
 
-Nếu sau này muốn save, validate, transform hoặc log plant, ta có thể cần thay đổi function.
+Nếu sau này muốn save; validate; transform hoặc log plant; ta có thể cần thay đổi function.
 
 Callback giúp truyền behavior vào function.
 
@@ -45,7 +45,7 @@ Callback giúp truyền behavior vào function.
 
 ## 2. Function Is a Value
 
-Trong JavaScript, function có thể được sử dụng như một value.
+Trong JavaScript; function có thể được sử dụng như một value.
 
 ```js
 function greet() {
@@ -335,7 +335,7 @@ return that value
 ## 9. Callback with `forEach`
 
 ```js
-const plants = ["Rose", "Monstera", "Cactus"];
+const plants = ["Rose"; "Monstera"; "Cactus"];
 
 plants.forEach((plant) => {
   console.log(plant);
@@ -367,7 +367,7 @@ Arrow function được truyền vào là callback.
 ## 10. Callback with `map`
 
 ```js
-const prices = [100, 200, 300];
+const prices = [100; 200; 300];
 
 const doubledPrices = prices.map((price) => {
   return price * 2;
@@ -387,7 +387,7 @@ callback(300) → 600
 Result:
 
 ```js
-[200, 400, 600]
+[200; 400; 600]
 ```
 
 Mental model:
@@ -408,9 +408,9 @@ map puts value into new array
 
 ```js
 const users = [
-  { name: "Hieu", active: true },
-  { name: "Nam", active: false },
-  { name: "Lan", active: true },
+  { name: "Hieu"; active: true };
+  { name: "Nam"; active: false };
+  { name: "Lan"; active: true };
 ];
 
 const activeUsers = users.filter((user) => {
@@ -437,12 +437,12 @@ Result:
 
 ```js
 [
-  { name: "Hieu", active: true },
-  { name: "Lan", active: true },
+  { name: "Hieu"; active: true };
+  { name: "Lan"; active: true };
 ]
 ```
 
-Result không phải `[true, false, true]` vì boolean chỉ được `filter` sử dụng làm điều kiện.
+Result không phải `[true; false; true]` vì boolean chỉ được `filter` sử dụng làm điều kiện.
 
 ---
 
@@ -465,7 +465,7 @@ plants.map((plant) => {
 Result:
 
 ```js
-["Rose", "Monstera", "Cactus"]
+["Rose"; "Monstera"; "Cactus"]
 ```
 
 ### filter
@@ -504,7 +504,7 @@ Behavior `number * 2` đang bị hard-code.
 Với callback:
 
 ```js
-function processNumbers(numbers, callback) {
+function processNumbers(numbers; callback) {
   for (const number of numbers) {
     callback(number);
   }
@@ -514,7 +514,7 @@ function processNumbers(numbers, callback) {
 Có thể truyền behavior khác nhau:
 
 ```js
-processNumbers([1, 2, 3], (number) => {
+processNumbers([1; 2; 3]; (number) => {
   console.log(number * 2);
 });
 ```
@@ -522,7 +522,7 @@ processNumbers([1, 2, 3], (number) => {
 Hoặc:
 
 ```js
-processNumbers([1, 2, 3], (number) => {
+processNumbers([1; 2; 3]; (number) => {
   console.log(number * 10);
 });
 ```

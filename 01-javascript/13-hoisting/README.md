@@ -88,7 +88,7 @@ Creation / Setup Phase
 Execution Phase
 ```
 
-Trước khi execute code trong một scope, JavaScript thực hiện bước chuẩn bị các bindings cần thiết.
+Trước khi execute code trong một scope; JavaScript thực hiện bước chuẩn bị các bindings cần thiết.
 
 ---
 
@@ -200,7 +200,7 @@ const variable
 stores function value
 ```
 
-Khi phân tích Hoisting, cần nhìn cách identifier được declared.
+Khi phân tích Hoisting; cần nhìn cách identifier được declared.
 
 Không được reasoning:
 
@@ -813,6 +813,6 @@ Sau bài này cần nhớ:
 - `let` và `const` có binding nhưng uninitialized trước initialization.
 - TDZ tồn tại trước initialization của `let`/`const`.
 - Access variable trong TDZ gây `ReferenceError`.
-- `undefined`, `uninitialized`, và `ReferenceError` là ba thứ khác nhau.
+- `undefined`; `uninitialized`; và `ReferenceError` là ba thứ khác nhau.
 
 ---

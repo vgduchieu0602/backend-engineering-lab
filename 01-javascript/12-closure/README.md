@@ -36,7 +36,7 @@ Closure giải thích hiện tượng này.
 
 ## 2. Definition
 
-**Closure là cơ chế cho phép một function tiếp tục truy cập các variable thuộc lexical outer scope của nó, kể cả sau khi outer function đã thực thi xong**.
+**Closure là cơ chế cho phép một function tiếp tục truy cập các variable thuộc lexical outer scope của nó; kể cả sau khi outer function đã thực thi xong**.
 
 Mental model:
 
@@ -179,7 +179,7 @@ createAdder
 10
 ```
 
-Sau khi `createAdder(10)` kết thúc, returned `add` vẫn truy cập được `amount`.
+Sau khi `createAdder(10)` kết thúc; returned `add` vẫn truy cập được `amount`.
 
 ---
 
@@ -349,9 +349,9 @@ function createCounter() {
   }
 
   return {
-    increment,
-    decrement,
-    getCount,
+    increment;
+    decrement;
+    getCount;
   };
 }
 ```
@@ -378,7 +378,7 @@ Thay vì:
 let count = 0;
 ```
 
-ở global scope, có thể đặt state bên trong:
+ở global scope; có thể đặt state bên trong:
 
 ```js
 function createCounter() {
@@ -482,7 +482,7 @@ Returning a function và Closure là hai concepts khác nhau.
 
 Không nhất thiết.
 
-Nếu variables vẫn reachable thông qua closure, chúng vẫn có thể được sử dụng.
+Nếu variables vẫn reachable thông qua closure; chúng vẫn có thể được sử dụng.
 
 ### Every call shares the same closure state
 
@@ -500,7 +500,7 @@ Closure state có thể được thay đổi.
 
 Không.
 
-Closure dựa trên Lexical Scope, mà lexical relationship phụ thuộc vào nơi function được defined.
+Closure dựa trên Lexical Scope; mà lexical relationship phụ thuộc vào nơi function được defined.
 
 ---
 

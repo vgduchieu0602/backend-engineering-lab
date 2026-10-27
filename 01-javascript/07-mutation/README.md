@@ -6,14 +6,14 @@ Cho:
 
 ```js id="o2im0b"
 const user = {
-  name: "Hieu",
+  name: "Hieu";
   age: 25
 };
 
 user.name = "Nam";
 ```
 
-Mặc dù `user` được khai báo bằng `const`, đoạn code vẫn hợp lệ.
+Mặc dù `user` được khai báo bằng `const`; đoạn code vẫn hợp lệ.
 
 Để hiểu tại sao cần phân biệt hai khái niệm:
 
@@ -378,7 +378,7 @@ Không nói:
 
 > `const` làm object không thể thay đổi.
 
-`const` ngăn reassignment của variable, không tự động ngăn object mutation.
+`const` ngăn reassignment của variable; không tự động ngăn object mutation.
 
 Không nhầm:
 

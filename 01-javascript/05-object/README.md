@@ -12,14 +12,14 @@ const isHealthy = true;
 
 Nhưng những dữ liệu trên thực chất cùng mô tả một thực thể: một `plant`.
 
-Khi số lượng dữ liệu tăng lên, việc sử dụng nhiều variable riêng biệt làm mối quan hệ giữa chúng khó quản lý.
+Khi số lượng dữ liệu tăng lên; việc sử dụng nhiều variable riêng biệt làm mối quan hệ giữa chúng khó quản lý.
 
 Object cho phép nhóm các dữ liệu có liên quan vào cùng một cấu trúc.
 
 ```js
 const plant = {
-  name: "Monstera",
-  age: 2,
+  name: "Monstera";
+  age: 2;
   isHealthy: true
 };
 ```
@@ -36,8 +36,8 @@ Ví dụ:
 
 ```js
 const user = {
-  name: "Hieu",
-  age: 25,
+  name: "Hieu";
+  age: 25;
   isActive: true
 };
 ```
@@ -46,8 +46,8 @@ Toàn bộ:
 
 ```js
 {
-  name: "Hieu",
-  age: 25,
+  name: "Hieu";
+  age: 25;
   isActive: true
 }
 ```
@@ -62,7 +62,7 @@ Cho:
 
 ```js
 const user = {
-  name: "Hieu",
+  name: "Hieu";
   age: 25
 };
 ```
@@ -77,7 +77,7 @@ user
 └── variable
 
 {
-  name: "Hieu",
+  name: "Hieu";
   age: 25
 }
 └── object value
@@ -103,7 +103,7 @@ Ví dụ:
 
 ```js
 const user = {
-  name: "Hieu",
+  name: "Hieu";
   age: 25
 };
 ```
@@ -141,8 +141,8 @@ Cho:
 
 ```js
 const user = {
-  name: "Hieu",
-  age: 25,
+  name: "Hieu";
+  age: 25;
   isActive: true
 };
 ```
@@ -202,7 +202,7 @@ Không nên nói:
 plant và name đều là variable ❌
 ```
 
-Ở đoạn code trên, `name` là property của object.
+Ở đoạn code trên; `name` là property của object.
 
 ---
 
@@ -212,7 +212,7 @@ Có thể truy cập property bằng dot notation:
 
 ```js
 const plant = {
-  name: "Monstera",
+  name: "Monstera";
   age: 2
 };
 
@@ -259,12 +259,12 @@ Với object:
 
 ```js
 const plantA = {
-  name: "Monstera",
+  name: "Monstera";
   age: 2
 };
 
 const plantB = {
-  name: "Rose",
+  name: "Rose";
   age: 1
 };
 ```
@@ -299,7 +299,7 @@ Object:
 
 ```js
 {
-  name: "Hieu",
+  name: "Hieu";
   age: 25
 }
 ```
@@ -325,8 +325,8 @@ Object không phải primitive.
 
 ```js
 const plant = {
-  name: "Monstera",
-  age: 2,
+  name: "Monstera";
+  age: 2;
   isHealthy: true
 };
 ```
@@ -341,8 +341,8 @@ Variable
 
 Value
 = {
-    name: "Monstera",
-    age: 2,
+    name: "Monstera";
+    age: 2;
     isHealthy: true
   }
 
@@ -353,10 +353,10 @@ Primitive
 = no
 
 Property keys
-= name, age, isHealthy
+= name; age; isHealthy
 
 Property values
-= "Monstera", 2, true
+= "Monstera"; 2; true
 ```
 
 ---

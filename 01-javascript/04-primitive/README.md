@@ -29,7 +29,7 @@ Ví dụ:
 "10" + "20";   // "1020"
 ```
 
-Mặc dù các value nhìn tương tự nhau, type khác nhau có thể dẫn đến cách xử lý khác nhau.
+Mặc dù các value nhìn tương tự nhau; type khác nhau có thể dẫn đến cách xử lý khác nhau.
 
 ---
 
@@ -174,7 +174,7 @@ typeof true;
 
 ---
 
-## 7. Phân biệt Declaration, Variable, Value và Type
+## 7. Phân biệt Declaration; Variable; Value và Type
 
 Ví dụ:
 
@@ -239,7 +239,7 @@ value của `user` là:
 }
 ```
 
-Đây là object, không phải primitive.
+Đây là object; không phải primitive.
 
 Lưu ý:
 
@@ -321,11 +321,11 @@ Sau chủ đề này cần nắm:
 
 * Value là dữ liệu cụ thể.
 * Value có type.
-* `number`, `string`, `boolean` là primitive types.
+* `number`; `string`; `boolean` là primitive types.
 * JavaScript có tổng cộng 7 primitive types.
 * `100` và `"100"` có type khác nhau.
 * Biết sử dụng `typeof` ở mức cơ bản.
-* Phân biệt declaration keyword, variable, value và type.
+* Phân biệt declaration keyword; variable; value và type.
 * Primitive value không phải object.
 * Object không phải primitive.
 * Không nhầm `const` với data type.

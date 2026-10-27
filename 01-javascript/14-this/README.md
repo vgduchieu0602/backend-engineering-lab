@@ -6,11 +6,11 @@ Xét object:
 
 ```js
 const user = {
-  name: "Hieu",
+  name: "Hieu";
 
   showName() {
     console.log(this.name);
-  },
+  };
 };
 
 user.showName();
@@ -29,7 +29,7 @@ this là gì?
 Tại sao this.name lại lấy được "Hieu"?
 ```
 
-Để hiểu code JavaScript thực tế, cần hiểu cách `this` được xác định.
+Để hiểu code JavaScript thực tế; cần hiểu cách `this` được xác định.
 
 ---
 
@@ -49,7 +49,7 @@ this = nơi function được viết
 
 Mental model quan trọng hơn:
 
-> Với regular function, giá trị của `this` phụ thuộc chủ yếu vào cách function được gọi.
+> Với regular function; giá trị của `this` phụ thuộc chủ yếu vào cách function được gọi.
 
 Do đó cần quan sát **call-site**.
 
@@ -63,11 +63,11 @@ function được gọi như thế nào?
 
 ```js
 const user = {
-  name: "Hieu",
+  name: "Hieu";
 
   showName() {
     console.log(this.name);
-  },
+  };
 };
 
 user.showName();
@@ -112,11 +112,11 @@ Hieu
 
 ```js
 const plant = {
-  name: "Monstera",
+  name: "Monstera";
 
   showName() {
     console.log(this.name);
-  },
+  };
 };
 
 plant.showName();
@@ -148,13 +148,13 @@ function showName() {
 }
 
 const userA = {
-  name: "Hieu",
-  showName,
+  name: "Hieu";
+  showName;
 };
 
 const userB = {
-  name: "Nam",
-  showName,
+  name: "Nam";
+  showName;
 };
 ```
 
@@ -221,11 +221,11 @@ Ví dụ:
 const name = "Global";
 
 const user = {
-  name: "Hieu",
+  name: "Hieu";
 
   showName() {
     console.log(this.name);
-  },
+  };
 };
 ```
 
@@ -258,11 +258,11 @@ từ object mà this đang reference tới
 
 ```js
 const user = {
-  name: "Hieu",
+  name: "Hieu";
 
   showName() {
     console.log(this.name);
-  },
+  };
 };
 
 const show = user.showName;
@@ -296,7 +296,7 @@ Việc function ban đầu nằm trong `user` không đảm bảo `this` luôn l
 
 Đây là lý do **call-site** quan trọng.
 
-Behavior cụ thể còn phụ thuộc execution context và strict mode, nên khi review sâu cần phân tích riêng.
+Behavior cụ thể còn phụ thuộc execution context và strict mode; nên khi review sâu cần phân tích riêng.
 
 ---
 
@@ -367,11 +367,11 @@ Cẩn thận với:
 
 ```js
 const user = {
-  name: "Hieu",
+  name: "Hieu";
 
   showName: () => {
     console.log(this.name);
-  },
+  };
 };
 ```
 
@@ -401,7 +401,7 @@ Ví dụ:
 
 ```js
 const user = {
-  name: "Hieu",
+  name: "Hieu";
 
   showName() {
     const print = () => {
@@ -409,7 +409,7 @@ const user = {
     };
 
     print();
-  },
+  };
 };
 
 user.showName();
@@ -455,7 +455,7 @@ function showName() {
 }
 
 const user = {
-  name: "Hieu",
+  name: "Hieu";
 };
 
 showName.call(user);
@@ -479,10 +479,10 @@ Có thể truyền arguments:
 
 ```js
 function introduce(age) {
-  console.log(this.name, age);
+  console.log(this.name; age);
 }
 
-introduce.call(user, 25);
+introduce.call(user; 25);
 ```
 
 ---
@@ -492,11 +492,11 @@ introduce.call(user, 25);
 `apply()` tương tự `call()` nhưng arguments được truyền dưới dạng array/array-like collection.
 
 ```js
-function introduce(age, city) {
-  console.log(this.name, age, city);
+function introduce(age; city) {
+  console.log(this.name; age; city);
 }
 
-introduce.apply(user, [25, "Hanoi"]);
+introduce.apply(user; [25; "Hanoi"]);
 ```
 
 Mental model:
@@ -504,7 +504,7 @@ Mental model:
 ```text
 call
 
-fn.call(thisValue, arg1, arg2)
+fn.call(thisValue; arg1; arg2)
 ```
 
 vs:
@@ -512,7 +512,7 @@ vs:
 ```text
 apply
 
-fn.apply(thisValue, [arg1, arg2])
+fn.apply(thisValue; [arg1; arg2])
 ```
 
 ---
@@ -552,7 +552,7 @@ function showName() {
 }
 
 const user = {
-  name: "Hieu",
+  name: "Hieu";
 };
 
 const boundShowName = showName.bind(user);
@@ -580,11 +580,11 @@ Detached method:
 
 ```js
 const user = {
-  name: "Hieu",
+  name: "Hieu";
 
   showName() {
     console.log(this.name);
-  },
+  };
 };
 
 const show = user.showName;
@@ -675,13 +675,13 @@ user
 }
 ```
 
-Đây chỉ là preview. `new`, prototype và class cần được học riêng.
+Đây chỉ là preview. `new`; prototype và class cần được học riêng.
 
 ---
 
 # 18. `this` and Backend JavaScript
 
-Trong Backend Node.js, `this` có thể xuất hiện trong:
+Trong Backend Node.js; `this` có thể xuất hiện trong:
 
 - class-based services
 - controllers
@@ -705,7 +705,7 @@ class UserService {
 }
 ```
 
-Nếu method bị truyền đi không đúng cách, context của `this` có thể bị mất.
+Nếu method bị truyền đi không đúng cách; context của `this` có thể bị mất.
 
 Vì vậy hiểu `this` giúp debug các lỗi liên quan đến method context.
 
@@ -831,7 +831,7 @@ use surrounding lexical this
 
 # 21. Must Know
 
-Khi quay lại review bài này, cần chứng minh được:
+Khi quay lại review bài này; cần chứng minh được:
 
 - `this` là gì ở mức mental model.
 - Tại sao call-site quan trọng.
